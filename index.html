@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+
+    body {
+      min-height: 100vh;
+      background-color: hsl(217, 54%, 11%);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    h1 {
+      color: white;
+      font-family: 'Outfit', sans-serif;
+      margin-left: 20px;
+    }
+
+    .paragraph {
+      font-size: 18px;
+      font-family: 'Outfit', sans-serif;
+      color: hsl(215, 51%, 70%);
+      margin-left: 20px;
+      
+    }
+
+    #jules {
+      color: hsl(178, 100%, 50%);
+    }
+
+    #image {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+    }
+    span {
+      color: white;
+    }
+
+    #cube {
+      width: 300px;
+      height: 300px;
+      border-radius: 5%;
+      margin-top: 20px;
+      margin-left: 20px;
+    }
+    
+    #avatar {
+      margin-left: 20px;
+      width: 25px;
+      height: 25px;
+      border: 1px solid white;
+      border-radius: 50%;
+    }
+
+    #one {
+      width: 420px;
+      height: 695px;
+      background-color: hsl(218, 54%, 11%);
+      border-radius: 5%;
+      margin-top: 20px;
+      margin-left: 20px;
+    }
+
+    #two {
+      width: 380px;
+      height: 655px;
+      background-color:hsl(217, 60%, 10%);
+      border-radius: 5%;
+      margin-top: 20px;
+      margin-left: 20px;
+    }
+
+    #three {
+      width: 340px;
+      height: 615px;
+      background-color: hsl(216, 50%, 16%);
+      border-radius: 5%;
+      margin-top: 20px;
+      margin-left: 20px;
+    }
+
+    #lineItems {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-right: 20px;
+      align-items: center;
+    }
+
+    hr {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+
+    #eth {
+      display: flex;
+      flex-direction: row;
+      margin-left: 20px;
+      align-items: center;
+    }
+
+    #days {
+      display: flex;
+      flex-direction: row;
+      margin-right: 20px;
+      align-items: center;
+    }
+    .attribution { font-size: 11px; text-align: center; margin-top: 50px; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <section id="card">
+    <div id="one">
+      <div id="two">
+        <div id="three">
+          <img id="cube" src="./images/image-equilibrium.jpg" alt="Cube Image">
+          <h1>Equilibrium #3429</h1>
+
+          <p class="paragraph">Our Equilibrium collection promotes balance and calm.</p>
+          <div id="lineItems">
+            <div id="eth">
+              <img src="./images/icon-ethereum.svg" alt="Ethereum Image" />
+              <p class="paragraph" id="jules">0.041 ETH</p>
+            </div>
+            <div id="days">
+              <img src="./images/icon-clock.svg" alt="Clock" />
+              <p class="paragraph">3 days left</p>
+            </div>
+          </div>   
+          <hr>
+          <div id="image">  
+            <img id="avatar" src="./images/image-avatar.png" alt="Avatar" /> 
+            <p class="paragraph">Creation of <span>Jules Wyvern</span></p>
+          </div>
+        </div>
+      </div>  
+    </div>
+  </section>
+  
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Chris Cirigliano</a>.
+    </div>
+  </footer>
+
+</body>
+</html>
